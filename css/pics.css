@@ -1,0 +1,209 @@
+@import "reset.css";
+@import "font.css";
+
+body{
+	text-align: center;
+	background: #282828;
+}
+
+h1{
+	line-height: 80px;
+	font-family: "mariageSamy";
+	font-size: 6em;
+	color: #D6d5d2;
+	text-shadow: 1px 0px 2px #36cfe6;
+	margin-top: 20px;
+}
+
+.head{
+	position: fixed;
+	text-align: center;
+	background: #282828;
+	width: 100%;
+	z-index: 10;
+	margin-bottom: 50px;
+}
+
+.head a{
+	color:#462a15;
+	text-decoration: none;
+	transition: all, 0.5s;
+}
+
+.head a:hover,
+.head a:focus{
+	color:#36cfe6;
+}
+
+/*
+ * Images
+ */
+
+#slider img {
+	display: none;
+	position: absolute;
+	left:0;
+	right:0;
+	max-width: 100%;
+	max-height: 100%;
+	margin:auto ;
+}
+
+#slider img:first-child {
+	display: block;
+}
+
+#gallery{
+	margin-top: 15px;
+}
+
+#gallery img{
+	width:400px;
+	height:auto;
+	margin:15px;
+}
+
+#gallery img:hover,
+#gallery img:focus{
+	cursor :pointer;
+}
+
+
+
+/*
+ * Vignettes
+ */
+
+#thumbnails {
+	position: absolute;
+	height: 100px;
+	top: 100%;
+	padding:10px 0px;
+	margin-top: -130px;
+	left: 50%;
+	margin-left: -32.9%;
+	width: 65.8%;
+	background: rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+
+#thumbnails img {
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+.container{
+	position:absolute;
+	top:150px;
+}
+
+#info{	
+	display:none;
+	position:absolute;
+	padding:15px;
+	border-radius: 5px;
+	background:rgba(0,0,0,0.7);
+	font-family: "mariageCilou";
+	text-transform: uppercase;
+	color: #D6d5d2;
+	z-index: 5;
+}
+
+/*
+ * Menu
+ */
+
+ #nav-icone,
+ .btn{
+ 	background: url(../img/whitey.png);
+	width: 150px;
+	height: 50px;
+	position: fixed;
+	top: -5px;
+	color: #462a15;
+	letter-spacing: 1.5px;
+	z-index: 2;
+	cursor: pointer;
+ }
+
+ div.btn{
+ 	top: 35px;
+ 	box-shadow: 2px 0px 5px 3px #462a15 inset;
+ 	border-radius: 6px;
+ 	width: auto;
+ 	height: auto;
+
+ }
+
+ div.btn h3{
+ 	padding:10px;
+  	border-radius: 6px;
+  	font-size:1em;
+ }
+
+.right{
+right: 20px;
+ }
+
+.left{
+ 	left: 20px;	
+ }
+
+ h3{
+ 	padding-top: 10px;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: "mariageSamy";
+	font-weight: 900;
+	letter-spacing: 1.5px;
+	border: 5px double #462a15;
+	width: calc(100%-10px);
+ }
+
+ ul{
+ 	padding: 40px 0px;
+ }
+
+ nav a{
+	text-transform: uppercase;
+	font-weight:900;
+	text-decoration: none;
+	color: #462a15;
+	font-family: "MariageCilou";
+	line-height: 60px;
+	padding: 20px;
+	width:100%;
+	background: transparent;
+	transition:color,0.5s;
+}
+
+li:hover,
+a:hover{
+	background: #36cfe6;
+	color:#f1f1f3;
+}
+
+#landscape li{
+	float:left;
+}
+
+#landscape ul{
+	padding:0;
+	margin:auto;
+}
+
+#landscape a{
+	line-height: 50px;
+	padding: 5px 48px
+}
+
+/* -----------------------------footer------------------------------- */
+
